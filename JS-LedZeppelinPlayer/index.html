@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Led Zeppelin Player</title>
+</head>
+
+<body>
+
+    <div class="keys">
+        <div data-key="87" class="key primeiraKey">
+            <kbd>W</kbd>
+            <span class="sound">Whole Lotta Love</span>
+        </div>
+        <div data-key="66" class="key">
+            <kbd>B</kbd>
+            <span class="sound">Black Dog</span>
+        </div>
+        <div data-key="73" class="key">
+            <kbd>I</kbd>
+            <span class="sound">Immigrant Song</span>
+        </div>
+        <div data-key="75" class="key ultimaKey">
+            <kbd>K</kbd>
+            <span class="sound">Kashmir</span>
+        </div>
+    </div>
+
+    <audio data-key="87" src="./samples/sampleWholeLotteLove.ogg"></audio>
+    <audio data-key="66" src="./samples/sampleBlackDog.ogg"></audio>
+    <audio data-key="73" src="./samples/sampleImmigrantSong.ogg"></audio>
+    <audio data-key="75" src="./samples/sampleKashmir.ogg"></audio>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

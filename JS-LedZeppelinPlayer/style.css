@@ -1,0 +1,59 @@
+html {
+    font-size:10px;
+    background:url(https://i.pinimg.com/originals/7a/87/e9/7a87e9c17fa2506a55bffa97de096529.png);
+    background-size:100% 100%;
+}
+body, html{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+.keys{
+    display:flex;
+    flex:1;
+    min-height:100vh;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.key{
+    border:.4rem solid black;
+    border-radius:.5rem;
+    height:12rem;
+    margin:1rem;
+    font-size:1.5rem;
+    padding:1rem .5rem;
+    transition:all .75s cubic-bezier(1,-0.05,.91,2.26);
+    width:10rem;
+    text-align:center;
+    color:#f0c7af;
+    background:rgba(0,0,0,.4);
+    text-shadow:0 0 .5rem #f0c7af;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+/*Adaptando a borda do primeiro e do último elemento dentro do container*/
+.primeiraKey, .ultimaKey{
+    border:.4rem solid #e70606;
+}
+
+/*A classe playing será adicionada via JavaScript*/
+
+.playing{
+    transform:scale(1.1);
+    border-color:#ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+kbd{
+    display:block;
+    font-size:4rem;
+
+    /*Talvez eu altere isso mais tarde*/
+    font-weight:1000;
+}
+.sound{
+    font-size:1.8rem;
+    text-transform:capitalize;
+    letter-spacing:.1rem;
+    color:#ffc600;
+}
