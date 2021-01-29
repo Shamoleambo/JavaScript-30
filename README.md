@@ -3,4 +3,4 @@
 
 ### Desafios para aprender coisas novas e sedimentar conhecimentos já adquiridos:
 
-..*Teste
+.*Teste
