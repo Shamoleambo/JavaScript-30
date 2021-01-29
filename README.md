@@ -1,4 +1,4 @@
-# JavaScript 30 - 30 desafios de JS Vanilla
+# JavaScript 30 - 30 desafios de JS Vanilla:computer::white_check_mark::heavy_check_mark:
 ## Tirado dos vídeos **JavaScript30**: https://javascript30.com/
 
 ### Desafios para aprender coisas novas e sedimentar conhecimentos já adquiridos:
