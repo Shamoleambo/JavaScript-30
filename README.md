@@ -10,5 +10,6 @@
 * Uso de atributos próprios para taags do tipo **data-***;
 * Uso de *pseudo-elementos* e *transitions* no CSS;
 * Busca de termos específicos com *regex*;
+* Uso do Canvas do HTML5;
 
 
