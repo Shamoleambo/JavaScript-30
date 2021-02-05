@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Tools Domination</title>
+</head>
+<body>
+    
+    <p onClick="makeGreen()" >×BREAK×DOWN×</p>
+
+    <script>
+
+        const dogs = [
+            {name: 'Snickers', age: 2},
+            {name: 'hugo', age: 8}];
+
+        function makeGreen(){
+            const p = document.querySelector('p');
+            p.style.color = '#BADA55';
+            p.style.fontSize = '50px';
+        }
+
+        //Regular
+        console.log('Oi');
+
+        //Interpolated
+        console.log('O número é: %d', 3);
+        console.log('A palavra é: %s', 'mano');
+
+        //Styled
+        console.log('%c Texto grande', 'font-size: 50px');
+        console.log('%c Mudando a cor', 'color: blue; font-weight: 800; background-color: yellow;');
+
+        //Warning
+        console.warn('Oh main!');
+
+        //Error
+        console.error('Por favor nao!!!');
+
+        //Info
+        console.info('youtube');
+
+        //Testing
+        const p = document.querySelector('p');
+
+        console.assert(p.classList.contains('ohnomain'), 'Que?');
+            //This print will only appear if the assertion is wrong
+            
+        //Clearing
+        console.clear();
+
+        //Viewing DOM elements
+        console.log(p);
+        console.dir(p);
+            //Actually I ahven't seen any difference from console.log
+
+        console.clear();
+
+        //Grouping together
+        dogs.forEach(dog =>{
+            console.group(`${dog.name}`);
+            console.log(`This dog named ${dog.name} has ${dog.age} years old.`)
+            console.groupEnd(`${dog.name}`); //MUST BE THE SAME STRING PASSED IN THE GROUP OPENING
+        });
+
+        //Counting
+        console.count('main');
+        console.count('main');
+        console.count('main');
+        console.count('main');
+        console.count('main');
+
+        //Timing
+        console.time('fetching data');
+        fetch('http://api.github.com/users/wesbos')
+            .then(data => data.json())
+            .then(data => {
+                console.timeEnd('fetching data'); //MUST BE THE SAME STRING PASSED ON THE FETCH OPENING
+            });
+
+        //Tables
+        console.table(dogs);
+
+
+    </script>
+
+</body>
+</html>
