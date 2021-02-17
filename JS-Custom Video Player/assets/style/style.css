@@ -97,6 +97,13 @@ body{
     cursor: ew-resize;
 }
 
+.progress__filled{
+    width: 50%;
+    background: #ffc600;
+    flex: 0;
+    flex-basis: 50%;
+}
+
 /*Unholy css(lol) to style type="range"*/
 
 input[type=range]{
